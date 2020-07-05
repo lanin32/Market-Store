@@ -5,10 +5,14 @@ public abstract class DiscountCard
 	protected double turnover;
 	protected double initialDiscountRate;
 	
-	abstract double discountRate();
+	abstract double discountRate();	
+	public String getOwner()
+	{
+		return owner;
+	}
+	
 	public void purchaseInfo(double purchaseValue)
 	{
-		System.out.printf("Client: %s\n", owner);
 		System.out.printf("Purchase value: $%.2f\n", purchaseValue);
 		double discountRate = discountRate();
 		System.out.printf("Discount rate: %.1f%%\n", discountRate);
