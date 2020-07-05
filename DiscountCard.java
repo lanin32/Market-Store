@@ -20,7 +20,7 @@ public abstract class DiscountCard
 		System.out.printf("Discount: $%.2f\nTotal: $%.2f\n--------------------\n", discount,purchaseValue-discount);
 	}
 	
-	DiscountCard(String owner, double turnover)
+	public DiscountCard(String owner, double turnover)
 	{
 		this.owner=owner;
 		this.turnover=turnover;
